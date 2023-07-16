@@ -1,0 +1,1890 @@
+EESchema Schematic File Version 4
+LIBS:Atari 130XE 1MB Sparta-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 9 17
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Atari:GTIA U17
+U 1 1 6024E1B6
+P 3725 3375
+F 0 "U17" H 3725 5040 50  0000 C CNN
+F 1 "GTIA" H 3725 4949 50  0000 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm_Socket" H 3725 3375 50  0001 C CNN
+F 3 "" H 3725 3375 50  0001 C CNN
+	1    3725 3375
+	1    0    0    -1  
+$EndComp
+Text GLabel 3125 2275 0    50   Input ~ 0
+A0
+Text GLabel 3125 2375 0    50   Input ~ 0
+A1
+Text GLabel 3125 2475 0    50   Input ~ 0
+A2
+Text GLabel 3125 2575 0    50   Input ~ 0
+A3
+Text GLabel 3125 2675 0    50   Input ~ 0
+A4
+Text GLabel 3125 3475 0    50   Input ~ 0
+D0
+Text GLabel 3125 3575 0    50   Input ~ 0
+D1
+Text GLabel 3125 3675 0    50   Input ~ 0
+D2
+Text GLabel 3125 3775 0    50   Input ~ 0
+D3
+Text GLabel 3125 3875 0    50   Input ~ 0
+D4
+Text GLabel 3125 3975 0    50   Input ~ 0
+D5
+Text GLabel 3125 4075 0    50   Input ~ 0
+D6
+Text GLabel 3125 4175 0    50   Input ~ 0
+D7
+Text GLabel 3125 2975 0    50   Input ~ 0
+AN0
+Text GLabel 3125 3075 0    50   Input ~ 0
+AN1
+Text GLabel 3125 3175 0    50   Input ~ 0
+AN2
+Text GLabel 3125 2825 0    50   Input ~ 0
+FO0
+Text GLabel 3125 4525 0    50   Input ~ 0
+HALT
+Text GLabel 3125 4675 0    50   Input ~ 0
+BO2
+Text GLabel 3125 2075 0    50   Input ~ 0
+GTIA
+$Comp
+L Device:C C42
+U 1 1 60250C02
+P 4725 4725
+F 0 "C42" H 4840 4771 50  0000 L CNN
+F 1 "100nF" H 4840 4680 50  0000 L CNN
+F 2 "Atari:C_Axial_L5.1mm_D2.5mm_P12.50mm_Horizontal" H 4763 4575 50  0001 C CNN
+F 3 "~" H 4725 4725 50  0001 C CNN
+	1    4725 4725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4325 4575 4725 4575
+Wire Wire Line
+	4325 4775 4325 4875
+Wire Wire Line
+	4325 4875 4725 4875
+$Comp
+L power:+5VA #PWR0147
+U 1 1 602523C9
+P 4725 4525
+F 0 "#PWR0147" H 4725 4375 50  0001 C CNN
+F 1 "+5VA" H 4825 4575 50  0000 C CNN
+F 2 "" H 4725 4525 50  0001 C CNN
+F 3 "" H 4725 4525 50  0001 C CNN
+	1    4725 4525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4725 4525 4725 4575
+Connection ~ 4725 4575
+$Comp
+L power:GND #PWR0148
+U 1 1 60253240
+P 4725 4975
+F 0 "#PWR0148" H 4725 4725 50  0001 C CNN
+F 1 "GND" H 4575 4950 50  0000 C CNN
+F 2 "" H 4725 4975 50  0001 C CNN
+F 3 "" H 4725 4975 50  0001 C CNN
+	1    4725 4975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4725 4875 4725 4975
+Connection ~ 4725 4875
+Text GLabel 4325 2075 2    50   Input ~ 0
+BELL
+$Comp
+L Device:C C44
+U 1 1 60255424
+P 900 6200
+F 0 "C44" V 648 6200 50  0000 C CNN
+F 1 "68pF" V 739 6200 50  0000 C CNN
+F 2 "Atari:C_Axial_L5.1mm_D2.5mm_P12.50mm_Horizontal" H 938 6050 50  0001 C CNN
+F 3 "~" H 900 6200 50  0001 C CNN
+	1    900  6200
+	0    1    1    0   
+$EndComp
+Text GLabel 750  6200 0    50   Input ~ 0
+O1
+$Comp
+L Device:R R35
+U 1 1 60256365
+P 1200 5675
+F 0 "R35" H 1270 5721 50  0000 L CNN
+F 1 "33k" H 1270 5630 50  0000 L CNN
+F 2 "Atari:R_Axial_DIN0207_L3.6mm_D2.2mm_P10.16mm_Horizontal" V 1130 5675 50  0001 C CNN
+F 3 "~" H 1200 5675 50  0001 C CNN
+	1    1200 5675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R36
+U 1 1 6025712F
+P 1600 5675
+F 0 "R36" H 1670 5721 50  0000 L CNN
+F 1 "680" H 1670 5630 50  0000 L CNN
+F 2 "Atari:R_Axial_DIN0207_L3.6mm_D2.2mm_P10.16mm_Horizontal" V 1530 5675 50  0001 C CNN
+F 3 "~" H 1600 5675 50  0001 C CNN
+	1    1600 5675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q1
+U 1 1 60257A78
+P 1500 6200
+F 0 "Q1" H 1690 6246 50  0000 L CNN
+F 1 "2N3904" H 1690 6155 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92L_Wide" H 1700 6125 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 1500 6200 50  0001 L CNN
+	1    1500 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C45
+U 1 1 602589B6
+P 2025 6000
+F 0 "C45" V 1950 6125 50  0000 C CNN
+F 1 "220pF" V 1864 6000 50  0000 C CNN
+F 2 "Atari:C_Axial_L5.1mm_D2.5mm_P12.50mm_Horizontal" H 2063 5850 50  0001 C CNN
+F 3 "~" H 2025 6000 50  0001 C CNN
+	1    2025 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0158
+U 1 1 60258F4F
+P 1600 6750
+F 0 "#PWR0158" H 1600 6500 50  0001 C CNN
+F 1 "GND" H 1605 6577 50  0000 C CNN
+F 2 "" H 1600 6750 50  0001 C CNN
+F 3 "" H 1600 6750 50  0001 C CNN
+	1    1600 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D2
+U 1 1 6025A6FA
+P 2375 5675
+F 0 "D2" V 2450 5825 50  0000 R CNN
+F 1 "1N4148" V 2450 5600 50  0000 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P12.70mm_Horizontal" H 2375 5500 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 2375 5675 50  0001 C CNN
+	1    2375 5675
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148 D3
+U 1 1 6025B7D9
+P 2675 6000
+F 0 "D3" H 2550 5950 50  0000 C CNN
+F 1 "1N4148" H 2675 5875 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P12.70mm_Horizontal" H 2675 5825 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 2675 6000 50  0001 C CNN
+	1    2675 6000
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5VA #PWR0159
+U 1 1 6025CC57
+P 2775 5475
+F 0 "#PWR0159" H 2775 5325 50  0001 C CNN
+F 1 "+5VA" H 2790 5648 50  0000 C CNN
+F 2 "" H 2775 5475 50  0001 C CNN
+F 3 "" H 2775 5475 50  0001 C CNN
+	1    2775 5475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 5525 1600 5525
+Wire Wire Line
+	2375 5525 1600 5525
+Connection ~ 1600 5525
+Wire Wire Line
+	2375 5525 2775 5525
+Wire Wire Line
+	2775 5525 2775 5475
+Connection ~ 2375 5525
+Wire Wire Line
+	1050 6200 1200 6200
+Wire Wire Line
+	1600 5825 1600 6000
+Wire Wire Line
+	1200 5825 1200 6200
+Connection ~ 1200 6200
+Wire Wire Line
+	1200 6200 1300 6200
+Wire Wire Line
+	1875 6000 1600 6000
+Connection ~ 1600 6000
+Wire Wire Line
+	2175 6000 2375 6000
+Wire Wire Line
+	2375 5825 2375 6000
+Connection ~ 2375 6000
+Wire Wire Line
+	2375 6000 2525 6000
+$Comp
+L Device:C C46
+U 1 1 6025F483
+P 2975 6400
+F 0 "C46" H 3075 6325 50  0000 C CNN
+F 1 "1nF" H 3050 6500 50  0000 C CNN
+F 2 "Atari:C_Axial_L5.1mm_D2.5mm_P12.50mm_Horizontal" H 3013 6250 50  0001 C CNN
+F 3 "~" H 2975 6400 50  0001 C CNN
+	1    2975 6400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C47
+U 1 1 6025FFD9
+P 3325 6400
+F 0 "C47" H 3425 6325 50  0000 C CNN
+F 1 "1nF" H 3400 6500 50  0000 C CNN
+F 2 "Atari:C_Axial_L5.1mm_D2.5mm_P12.50mm_Horizontal" H 3363 6250 50  0001 C CNN
+F 3 "~" H 3325 6400 50  0001 C CNN
+	1    3325 6400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2825 6000 2975 6000
+Wire Wire Line
+	2975 6000 2975 6250
+$Comp
+L Device:R R37
+U 1 1 60261023
+P 3150 5750
+F 0 "R37" V 2943 5750 50  0000 C CNN
+F 1 "1k" V 3034 5750 50  0000 C CNN
+F 2 "Atari:R_Axial_DIN0207_L3.6mm_D2.2mm_P10.16mm_Horizontal" V 3080 5750 50  0001 C CNN
+F 3 "~" H 3150 5750 50  0001 C CNN
+	1    3150 5750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2975 5750 2975 6000
+Connection ~ 2975 6000
+Wire Wire Line
+	3325 5750 3325 6225
+Wire Wire Line
+	3325 5750 3300 5750
+Wire Wire Line
+	2975 5750 3000 5750
+$Comp
+L Device:R_POT RV38
+U 1 1 602637FB
+P 3750 6075
+F 0 "RV38" H 3850 6300 50  0000 R CNN
+F 1 "500k" H 3950 6225 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_ACP_CA9-V10_Vertical_Hole" H 3750 6075 50  0001 C CNN
+F 3 "~" H 3750 6075 50  0001 C CNN
+	1    3750 6075
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C48
+U 1 1 6026513C
+P 4050 6400
+F 0 "C48" H 3935 6354 50  0000 R CNN
+F 1 "100nF" H 3935 6445 50  0000 R CNN
+F 2 "Atari:C_Axial_L5.1mm_D2.5mm_P12.50mm_Horizontal" H 4088 6250 50  0001 C CNN
+F 3 "~" H 4050 6400 50  0001 C CNN
+	1    4050 6400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3900 6075 4050 6075
+Wire Wire Line
+	4050 6075 4050 6250
+Wire Wire Line
+	4325 4325 5100 4325
+Wire Wire Line
+	5100 4325 5100 6075
+Connection ~ 4050 6075
+Wire Wire Line
+	5100 6075 4050 6075
+Wire Wire Line
+	1600 6400 1600 6725
+Wire Wire Line
+	4050 6550 4050 6725
+Connection ~ 1600 6725
+Wire Wire Line
+	1600 6725 1600 6750
+Wire Wire Line
+	3325 6550 3325 6725
+Connection ~ 3325 6725
+Wire Wire Line
+	3325 6725 2975 6725
+Wire Wire Line
+	2975 6550 2975 6725
+Connection ~ 2975 6725
+Wire Wire Line
+	2975 6725 1600 6725
+Text GLabel 4325 3925 2    50   Input ~ 0
+RW
+Text GLabel 4325 3625 2    50   Input ~ 0
+RD5
+NoConn ~ 4325 3525
+$Comp
+L 74xx:74LS74 U21
+U 1 1 6026F8AA
+P 6250 5400
+F 0 "U21" H 6075 5650 50  0000 C CNN
+F 1 "74LS74" H 6425 5650 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 6250 5400 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 6250 5400 50  0001 C CNN
+	1    6250 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS74 U21
+U 2 1 60270786
+P 6250 6200
+F 0 "U21" H 6075 6450 50  0000 C CNN
+F 1 "74LS74" H 6400 6450 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 6250 6200 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 6250 6200 50  0001 C CNN
+	2    6250 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS74 U21
+U 3 1 602713C2
+P 1050 3675
+F 0 "U21" H 1280 3721 50  0000 L CNN
+F 1 "74LS74" H 1280 3630 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 1050 3675 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 1050 3675 50  0001 C CNN
+	3    1050 3675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 5100 5625 5100
+Wire Wire Line
+	5625 6500 6250 6500
+Wire Wire Line
+	6250 5900 5625 5900
+Connection ~ 5625 5900
+Wire Wire Line
+	5625 5900 5625 6500
+Wire Wire Line
+	6250 5700 5625 5700
+Wire Wire Line
+	5625 5100 5625 5700
+Connection ~ 5625 5700
+Wire Wire Line
+	5625 5700 5625 5900
+$Comp
+L power:+5VA #PWR0160
+U 1 1 6027606E
+P 6250 5025
+F 0 "#PWR0160" H 6250 4875 50  0001 C CNN
+F 1 "+5VA" H 6265 5198 50  0000 C CNN
+F 2 "" H 6250 5025 50  0001 C CNN
+F 3 "" H 6250 5025 50  0001 C CNN
+	1    6250 5025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 5025 6250 5100
+Connection ~ 6250 5100
+Wire Wire Line
+	5950 5300 5850 5300
+Wire Wire Line
+	5850 5300 5850 4775
+Wire Wire Line
+	5850 4775 6650 4775
+Wire Wire Line
+	6650 4775 6650 5500
+Wire Wire Line
+	6650 5500 6550 5500
+Wire Wire Line
+	5950 6100 5850 6100
+Wire Wire Line
+	5850 6100 5850 6650
+Wire Wire Line
+	5850 6650 6650 6650
+Wire Wire Line
+	6650 6650 6650 6300
+Wire Wire Line
+	6650 6300 6550 6300
+Wire Wire Line
+	5950 6200 5750 6200
+Wire Wire Line
+	5750 6200 5750 5800
+Wire Wire Line
+	5750 5800 6725 5800
+Wire Wire Line
+	6725 5800 6725 5300
+Wire Wire Line
+	6725 5300 6550 5300
+Wire Wire Line
+	5425 5400 5950 5400
+$Comp
+L Device:C C206
+U 1 1 6028B7F2
+P 5425 6400
+F 0 "C206" H 5310 6354 50  0000 R CNN
+F 1 "22pF" H 5310 6445 50  0000 R CNN
+F 2 "Atari:C_Axial_L5.1mm_D2.5mm_P12.50mm_Horizontal" H 5463 6250 50  0001 C CNN
+F 3 "~" H 5425 6400 50  0001 C CNN
+	1    5425 6400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5425 6250 5425 5400
+Connection ~ 5425 5400
+$Comp
+L power:GND #PWR0161
+U 1 1 6028D1AF
+P 5425 6750
+F 0 "#PWR0161" H 5425 6500 50  0001 C CNN
+F 1 "GND" H 5430 6577 50  0000 C CNN
+F 2 "" H 5425 6750 50  0001 C CNN
+F 3 "" H 5425 6750 50  0001 C CNN
+	1    5425 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5425 6550 5425 6750
+Text Notes 4575 6550 0    50   ~ 0
+When L=470R\nC206 is not mounted
+$Comp
+L Device:L L37
+U 1 1 60290288
+P 3800 5200
+F 0 "L37" V 3725 5200 50  0000 C CNN
+F 1 "Bead or 470R" V 3900 5200 50  0000 C CNN
+F 2 "Atari:L_Axial_L7.0mm_D3.3mm_P12.50mm_Horizontal_Fastron_MICC" H 3800 5200 50  0001 C CNN
+F 3 "~" H 3800 5200 50  0001 C CNN
+	1    3800 5200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3950 5200 5425 5200
+Wire Wire Line
+	5425 5200 5425 5400
+Text GLabel 750  5200 0    50   Input ~ 0
+OSC
+Wire Wire Line
+	3650 5200 750  5200
+$Comp
+L Device:R R73
+U 1 1 6029779A
+P 7275 4975
+F 0 "R73" H 7345 5021 50  0000 L CNN
+F 1 "4k7" H 7345 4930 50  0000 L CNN
+F 2 "Atari:R_Axial_DIN0207_L3.6mm_D2.2mm_P10.16mm_Horizontal" V 7205 4975 50  0001 C CNN
+F 3 "~" H 7275 4975 50  0001 C CNN
+	1    7275 4975
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C60
+U 1 1 60297D21
+P 7275 5525
+F 0 "C60" H 7375 5450 50  0000 C CNN
+F 1 "560pF" H 7350 5625 50  0000 C CNN
+F 2 "Atari:C_Axial_L5.1mm_D2.5mm_P12.50mm_Horizontal" H 7313 5375 50  0001 C CNN
+F 3 "~" H 7275 5525 50  0001 C CNN
+	1    7275 5525
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C59
+U 1 1 60299AE1
+P 7700 5250
+F 0 "C59" V 7850 5250 50  0000 C CNN
+F 1 "22pF" V 7550 5250 50  0000 C CNN
+F 2 "Atari:C_Axial_L5.1mm_D2.5mm_P12.50mm_Horizontal" H 7738 5100 50  0001 C CNN
+F 3 "~" H 7700 5250 50  0001 C CNN
+	1    7700 5250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0162
+U 1 1 6029E8E6
+P 7275 5900
+F 0 "#PWR0162" H 7275 5650 50  0001 C CNN
+F 1 "GND" H 7175 5900 50  0000 C CNN
+F 2 "" H 7275 5900 50  0001 C CNN
+F 3 "" H 7275 5900 50  0001 C CNN
+	1    7275 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal Y2
+U 1 1 602A36C7
+P 8150 5250
+F 0 "Y2" H 8150 5425 50  0000 C CNN
+F 1 "4,43 MHz" H 8150 5075 50  0000 C CNN
+F 2 "Crystal:Crystal_HC18-U_Horizontal" H 8150 5250 50  0001 C CNN
+F 3 "~" H 8150 5250 50  0001 C CNN
+	1    8150 5250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R70
+U 1 1 602A56FD
+P 9375 4950
+F 0 "R70" H 9445 4996 50  0000 L CNN
+F 1 "10k" H 9445 4905 50  0000 L CNN
+F 2 "Atari:R_Axial_DIN0207_L3.6mm_D2.2mm_P10.16mm_Horizontal" V 9305 4950 50  0001 C CNN
+F 3 "~" H 9375 4950 50  0001 C CNN
+	1    9375 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R69
+U 1 1 602A646E
+P 9375 5525
+F 0 "R69" H 9445 5571 50  0000 L CNN
+F 1 "6k8" H 9445 5480 50  0000 L CNN
+F 2 "Atari:R_Axial_DIN0207_L3.6mm_D2.2mm_P10.16mm_Horizontal" V 9305 5525 50  0001 C CNN
+F 3 "~" H 9375 5525 50  0001 C CNN
+	1    9375 5525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R71
+U 1 1 602A8152
+P 9075 5250
+F 0 "R71" V 8868 5250 50  0000 C CNN
+F 1 "470" V 8959 5250 50  0000 C CNN
+F 2 "Atari:R_Axial_DIN0207_L3.6mm_D2.2mm_P10.16mm_Horizontal" V 9005 5250 50  0001 C CNN
+F 3 "~" H 9075 5250 50  0001 C CNN
+	1    9075 5250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9375 5100 9375 5250
+Wire Wire Line
+	9225 5250 9375 5250
+Connection ~ 9375 5250
+Wire Wire Line
+	9375 5250 9375 5375
+$Comp
+L power:GND #PWR0164
+U 1 1 602AED3B
+P 9375 5900
+F 0 "#PWR0164" H 9375 5650 50  0001 C CNN
+F 1 "GND" H 9380 5727 50  0000 C CNN
+F 2 "" H 9375 5900 50  0001 C CNN
+F 3 "" H 9375 5900 50  0001 C CNN
+	1    9375 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9375 5675 9375 5900
+$Comp
+L Transistor_BJT:2N3904 Q6
+U 1 1 602B0D57
+P 9850 5250
+F 0 "Q6" H 10040 5296 50  0000 L CNN
+F 1 "2N3904" H 10040 5205 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92" H 10050 5175 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 9850 5250 50  0001 L CNN
+	1    9850 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9375 5250 9650 5250
+$Comp
+L power:GND #PWR0165
+U 1 1 602B31E3
+P 9950 5900
+F 0 "#PWR0165" H 9950 5650 50  0001 C CNN
+F 1 "GND" H 9955 5727 50  0000 C CNN
+F 2 "" H 9950 5900 50  0001 C CNN
+F 3 "" H 9950 5900 50  0001 C CNN
+	1    9950 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 5450 9950 5900
+Wire Wire Line
+	9375 4800 9950 4800
+Wire Wire Line
+	9950 4800 9950 5050
+$Comp
+L Device:R R72
+U 1 1 602B723B
+P 9775 4425
+F 0 "R72" V 9568 4425 50  0000 C CNN
+F 1 "1k" V 9659 4425 50  0000 C CNN
+F 2 "Atari:R_Axial_DIN0207_L3.6mm_D2.2mm_P10.16mm_Horizontal" V 9705 4425 50  0001 C CNN
+F 3 "~" H 9775 4425 50  0001 C CNN
+	1    9775 4425
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9625 4425 9375 4425
+Wire Wire Line
+	9375 4425 9375 4800
+Connection ~ 9375 4800
+Wire Wire Line
+	4325 4225 5600 4225
+Wire Wire Line
+	5600 4225 5600 4425
+Wire Wire Line
+	5600 4425 9375 4425
+Connection ~ 9375 4425
+Wire Wire Line
+	9925 4425 10050 4425
+Wire Wire Line
+	10050 4425 10050 4350
+Wire Wire Line
+	6550 6100 6800 6100
+Wire Wire Line
+	6800 6100 6800 5250
+$Comp
+L Device:L L8
+U 1 1 602C2274
+P 6300 6850
+F 0 "L8" V 6225 6850 50  0000 C CNN
+F 1 "1,5uH" V 6375 6850 50  0000 C CNN
+F 2 "Atari:L_Axial_L7.0mm_D3.3mm_P12.50mm_Horizontal_Fastron_MICC" H 6300 6850 50  0001 C CNN
+F 3 "~" H 6300 6850 50  0001 C CNN
+	1    6300 6850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C111
+U 1 1 602C28D4
+P 6300 7125
+F 0 "C111" V 6350 7275 50  0000 C CNN
+F 1 "820pF" V 6450 7125 50  0000 C CNN
+F 2 "Atari:C_Axial_L5.1mm_D2.5mm_P12.50mm_Horizontal" H 6338 6975 50  0001 C CNN
+F 3 "~" H 6300 7125 50  0001 C CNN
+	1    6300 7125
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C61
+U 1 1 602C32AF
+P 5800 7000
+F 0 "C61" H 5950 6900 50  0000 R CNN
+F 1 "100nF" H 5900 6800 50  0000 R CNN
+F 2 "Atari:C_Axial_L5.1mm_D2.5mm_P12.50mm_Horizontal" H 5838 6850 50  0001 C CNN
+F 3 "~" H 5800 7000 50  0001 C CNN
+	1    5800 7000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6150 6850 6150 7125
+Wire Wire Line
+	6450 6850 6450 7125
+Wire Wire Line
+	6150 6850 5800 6850
+Connection ~ 6150 6850
+$Comp
+L power:GND #PWR0167
+U 1 1 602CD88A
+P 5800 7375
+F 0 "#PWR0167" H 5800 7125 50  0001 C CNN
+F 1 "GND" H 5650 7325 50  0000 C CNN
+F 2 "" H 5800 7375 50  0001 C CNN
+F 3 "" H 5800 7375 50  0001 C CNN
+	1    5800 7375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 7150 5800 7375
+Wire Wire Line
+	6450 6850 6900 6850
+Wire Wire Line
+	6900 6850 6900 6225
+Connection ~ 6450 6850
+$Comp
+L Device:R R41
+U 1 1 602E7250
+P 6225 1175
+F 0 "R41" V 6225 1100 50  0000 L CNN
+F 1 "1k" H 6275 1175 50  0000 L CNN
+F 2 "Atari:R_Axial_DIN0207_L3.6mm_D2.2mm_P10.16mm_Horizontal" V 6155 1175 50  0001 C CNN
+F 3 "~" H 6225 1175 50  0001 C CNN
+	1    6225 1175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R42
+U 1 1 602E7C39
+P 6025 1175
+F 0 "R42" V 6025 1100 50  0000 L CNN
+F 1 "1k" H 6075 1175 50  0000 L CNN
+F 2 "Atari:R_Axial_DIN0207_L3.6mm_D2.2mm_P10.16mm_Horizontal" V 5955 1175 50  0001 C CNN
+F 3 "~" H 6025 1175 50  0001 C CNN
+	1    6025 1175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R43
+U 1 1 602E8342
+P 5825 1175
+F 0 "R43" V 5825 1100 50  0000 L CNN
+F 1 "1k" H 5875 1175 50  0000 L CNN
+F 2 "Atari:R_Axial_DIN0207_L3.6mm_D2.2mm_P10.16mm_Horizontal" V 5755 1175 50  0001 C CNN
+F 3 "~" H 5825 1175 50  0001 C CNN
+	1    5825 1175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R44
+U 1 1 602E8548
+P 5625 1175
+F 0 "R44" V 5625 1100 50  0000 L CNN
+F 1 "1k" H 5675 1175 50  0000 L CNN
+F 2 "Atari:R_Axial_DIN0207_L3.6mm_D2.2mm_P10.16mm_Horizontal" V 5555 1175 50  0001 C CNN
+F 3 "~" H 5625 1175 50  0001 C CNN
+	1    5625 1175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R45
+U 1 1 602E879D
+P 5425 1175
+F 0 "R45" V 5425 1100 50  0000 L CNN
+F 1 "1k" H 5475 1175 50  0000 L CNN
+F 2 "Atari:R_Axial_DIN0207_L3.6mm_D2.2mm_P10.16mm_Horizontal" V 5355 1175 50  0001 C CNN
+F 3 "~" H 5425 1175 50  0001 C CNN
+	1    5425 1175
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4xxx:4050 U20
+U 1 1 602E917F
+P 6900 2475
+F 0 "U20" H 6875 2475 50  0000 C CNN
+F 1 "4050" H 6950 2600 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket" H 6900 2475 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/intersil/documents/cd40/cd4050bms.pdf" H 6900 2475 50  0001 C CNN
+	1    6900 2475
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4xxx:4050 U20
+U 2 1 602EAE11
+P 6900 2150
+F 0 "U20" H 6875 2150 50  0000 C CNN
+F 1 "4050" H 6950 2275 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket" H 6900 2150 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/intersil/documents/cd40/cd4050bms.pdf" H 6900 2150 50  0001 C CNN
+	2    6900 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4xxx:4050 U20
+U 3 1 602EBD72
+P 6900 1500
+F 0 "U20" H 6875 1500 50  0000 C CNN
+F 1 "4050" H 6950 1650 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket" H 6900 1500 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/intersil/documents/cd40/cd4050bms.pdf" H 6900 1500 50  0001 C CNN
+	3    6900 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4xxx:4050 U20
+U 4 1 602ECD5A
+P 3850 1175
+F 0 "U20" H 3850 1492 50  0000 C CNN
+F 1 "4050" H 3850 1401 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket" H 3850 1175 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/intersil/documents/cd40/cd4050bms.pdf" H 3850 1175 50  0001 C CNN
+	4    3850 1175
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4xxx:4050 U20
+U 5 1 602EDE60
+P 6900 1825
+F 0 "U20" H 6875 1825 50  0000 C CNN
+F 1 "4050" H 6950 1975 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket" H 6900 1825 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/intersil/documents/cd40/cd4050bms.pdf" H 6900 1825 50  0001 C CNN
+	5    6900 1825
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4xxx:4050 U20
+U 6 1 602F31D4
+P 6900 2800
+F 0 "U20" H 6875 2800 50  0000 C CNN
+F 1 "4050" H 6950 2925 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket" H 6900 2800 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/intersil/documents/cd40/cd4050bms.pdf" H 6900 2800 50  0001 C CNN
+	6    6900 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 2225 4325 2225
+Wire Wire Line
+	4950 2325 4325 2325
+Wire Wire Line
+	5050 2425 4325 2425
+Wire Wire Line
+	5150 2525 4325 2525
+Wire Wire Line
+	5625 1025 5825 1025
+Wire Wire Line
+	5825 1025 6025 1025
+Connection ~ 5825 1025
+Wire Wire Line
+	6025 1025 6225 1025
+Connection ~ 6025 1025
+Wire Wire Line
+	5425 1025 5625 1025
+Connection ~ 5625 1025
+$Comp
+L power:+5VA #PWR0168
+U 1 1 60330131
+P 5425 925
+F 0 "#PWR0168" H 5425 775 50  0001 C CNN
+F 1 "+5VA" H 5525 975 50  0000 C CNN
+F 2 "" H 5425 925 50  0001 C CNN
+F 3 "" H 5425 925 50  0001 C CNN
+	1    5425 925 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5425 925  5425 1025
+Connection ~ 5425 1025
+Wire Wire Line
+	4850 1500 6225 1500
+Wire Wire Line
+	4950 1825 6025 1825
+Wire Wire Line
+	5050 2150 5825 2150
+Wire Wire Line
+	5150 2475 5625 2475
+Wire Wire Line
+	4850 1500 4850 2225
+Wire Wire Line
+	4950 1825 4950 2325
+Wire Wire Line
+	5050 2150 5050 2425
+Wire Wire Line
+	5150 2475 5150 2525
+Wire Wire Line
+	4325 2675 6600 2675
+Wire Wire Line
+	6600 2675 6600 2800
+Wire Wire Line
+	6225 1325 6225 1500
+Connection ~ 6225 1500
+Wire Wire Line
+	6225 1500 6600 1500
+Wire Wire Line
+	6025 1325 6025 1825
+Connection ~ 6025 1825
+Wire Wire Line
+	6025 1825 6600 1825
+Wire Wire Line
+	5825 1325 5825 2150
+Connection ~ 5825 2150
+Wire Wire Line
+	5825 2150 6600 2150
+Wire Wire Line
+	5625 1325 5625 2475
+Connection ~ 5625 2475
+Wire Wire Line
+	5625 2475 6600 2475
+$Comp
+L 4xxx:4050 U20
+U 7 1 603576A5
+P 1050 2100
+F 0 "U20" H 1280 2146 50  0000 L CNN
+F 1 "4050" H 1280 2055 50  0000 L CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket" H 1050 2100 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/intersil/documents/cd40/cd4050bms.pdf" H 1050 2100 50  0001 C CNN
+	7    1050 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R47
+U 1 1 603588EA
+P 7925 1500
+F 0 "R47" V 7925 1500 50  0000 C CNN
+F 1 "36k" V 7809 1500 50  0000 C CNN
+F 2 "Atari:R_Axial_DIN0207_L3.6mm_D2.2mm_P10.16mm_Horizontal" V 7855 1500 50  0001 C CNN
+F 3 "~" H 7925 1500 50  0001 C CNN
+	1    7925 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R48
+U 1 1 60359449
+P 7925 1825
+F 0 "R48" V 7925 1825 50  0000 C CNN
+F 1 "18k" V 7809 1825 50  0000 C CNN
+F 2 "Atari:R_Axial_DIN0207_L3.6mm_D2.2mm_P10.16mm_Horizontal" V 7855 1825 50  0001 C CNN
+F 3 "~" H 7925 1825 50  0001 C CNN
+	1    7925 1825
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R49
+U 1 1 60359855
+P 7925 2150
+F 0 "R49" V 7925 2150 50  0000 C CNN
+F 1 "9k1" V 7809 2150 50  0000 C CNN
+F 2 "Atari:R_Axial_DIN0207_L3.6mm_D2.2mm_P10.16mm_Horizontal" V 7855 2150 50  0001 C CNN
+F 3 "~" H 7925 2150 50  0001 C CNN
+	1    7925 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R50
+U 1 1 60359C6A
+P 7925 2475
+F 0 "R50" V 7925 2475 50  0000 C CNN
+F 1 "4k7" V 7809 2475 50  0000 C CNN
+F 2 "Atari:R_Axial_DIN0207_L3.6mm_D2.2mm_P10.16mm_Horizontal" V 7855 2475 50  0001 C CNN
+F 3 "~" H 7925 2475 50  0001 C CNN
+	1    7925 2475
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R51
+U 1 1 6035A1F7
+P 8250 2800
+F 0 "R51" V 8250 2800 50  0000 C CNN
+F 1 "750" V 8134 2800 50  0000 C CNN
+F 2 "Atari:R_Axial_DIN0207_L3.6mm_D2.2mm_P10.16mm_Horizontal" V 8180 2800 50  0001 C CNN
+F 3 "~" H 8250 2800 50  0001 C CNN
+	1    8250 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:1N4148 D4
+U 1 1 6035A8E3
+P 7600 2800
+F 0 "D4" H 7600 2700 50  0000 C CNN
+F 1 "1N4148" H 7600 2925 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P12.70mm_Horizontal" H 7600 2625 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 7600 2800 50  0001 C CNN
+	1    7600 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 1500 7775 1500
+Wire Wire Line
+	7200 1825 7775 1825
+Wire Wire Line
+	7200 2150 7775 2150
+Wire Wire Line
+	7200 2475 7775 2475
+Wire Wire Line
+	7200 2800 7450 2800
+Wire Wire Line
+	7750 2800 8100 2800
+Wire Wire Line
+	8400 2800 8400 2475
+Wire Wire Line
+	8400 1500 8075 1500
+Wire Wire Line
+	8075 1825 8400 1825
+Connection ~ 8400 1825
+Wire Wire Line
+	8075 2150 8400 2150
+Connection ~ 8400 2150
+Wire Wire Line
+	8400 2150 8400 1825
+Wire Wire Line
+	8075 2475 8400 2475
+Connection ~ 8400 2475
+Wire Wire Line
+	8400 2475 8400 2150
+$Comp
+L Device:L L5
+U 1 1 60396653
+P 6825 700
+F 0 "L5" V 6750 700 50  0000 C CNN
+F 1 "820uH" V 6900 700 50  0000 C CNN
+F 2 "Atari:L_Axial_L7.0mm_D3.3mm_P12.50mm_Horizontal_Fastron_MICC" H 6825 700 50  0001 C CNN
+F 3 "~" H 6825 700 50  0001 C CNN
+	1    6825 700 
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R46
+U 1 1 60396E5D
+P 8400 1125
+F 0 "R46" V 8400 1050 50  0000 L CNN
+F 1 "1k6" H 8450 1125 50  0000 L CNN
+F 2 "Atari:R_Axial_DIN0207_L3.6mm_D2.2mm_P10.16mm_Horizontal" V 8330 1125 50  0001 C CNN
+F 3 "~" H 8400 1125 50  0001 C CNN
+	1    8400 1125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 1275 8400 1500
+Connection ~ 8400 1500
+$Comp
+L Device:CP C50
+U 1 1 6039D28C
+P 7425 850
+F 0 "C50" H 7543 896 50  0000 L CNN
+F 1 "220uF" H 7543 805 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 7463 700 50  0001 C CNN
+F 3 "~" H 7425 850 50  0001 C CNN
+	1    7425 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6675 700  6225 700 
+Wire Wire Line
+	6225 700  6225 1025
+Connection ~ 6225 1025
+Wire Wire Line
+	6975 700  7425 700 
+Wire Wire Line
+	7425 700  8400 700 
+Wire Wire Line
+	8400 700  8400 975 
+Connection ~ 7425 700 
+$Comp
+L power:GND #PWR0169
+U 1 1 603AFAE6
+P 7425 1125
+F 0 "#PWR0169" H 7425 875 50  0001 C CNN
+F 1 "GND" H 7275 1100 50  0000 C CNN
+F 2 "" H 7425 1125 50  0001 C CNN
+F 3 "" H 7425 1125 50  0001 C CNN
+	1    7425 1125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7425 1000 7425 1125
+$Comp
+L Device:C C51
+U 1 1 603B650E
+P 8750 850
+F 0 "C51" H 8865 896 50  0000 L CNN
+F 1 "100nF" H 8865 805 50  0000 L CNN
+F 2 "Atari:C_Axial_L5.1mm_D2.5mm_P12.50mm_Horizontal" H 8788 700 50  0001 C CNN
+F 3 "~" H 8750 850 50  0001 C CNN
+	1    8750 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0170
+U 1 1 603B6CF8
+P 8750 1125
+F 0 "#PWR0170" H 8750 875 50  0001 C CNN
+F 1 "GND" H 8750 975 50  0000 C CNN
+F 2 "" H 8750 1125 50  0001 C CNN
+F 3 "" H 8750 1125 50  0001 C CNN
+	1    8750 1125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 1000 8750 1125
+Wire Wire Line
+	8750 700  8400 700 
+Connection ~ 8400 700 
+$Comp
+L Device:R R52
+U 1 1 603C3716
+P 8750 2125
+F 0 "R52" V 8750 2050 50  0000 L CNN
+F 1 "2k" H 8800 2125 50  0000 L CNN
+F 2 "Atari:R_Axial_DIN0207_L3.6mm_D2.2mm_P10.16mm_Horizontal" V 8680 2125 50  0001 C CNN
+F 3 "~" H 8750 2125 50  0001 C CNN
+	1    8750 2125
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q3
+U 1 1 603C3F62
+P 9200 1625
+F 0 "Q3" H 9390 1671 50  0000 L CNN
+F 1 "2N3904" H 9390 1580 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92L_Wide" H 9400 1550 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 9200 1625 50  0001 L CNN
+	1    9200 1625
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R116
+U 1 1 603C47DF
+P 9300 1125
+F 0 "R116" V 9225 1025 50  0000 L CNN
+F 1 "8,2" H 9350 1125 50  0000 L CNN
+F 2 "Atari:R_Axial_DIN0207_L3.6mm_D2.2mm_P10.16mm_Horizontal" V 9230 1125 50  0001 C CNN
+F 3 "~" H 9300 1125 50  0001 C CNN
+	1    9300 1125
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R53
+U 1 1 603C5A4E
+P 9300 2125
+F 0 "R53" V 9300 2050 50  0000 L CNN
+F 1 "75" H 9350 2125 50  0000 L CNN
+F 2 "Atari:R_Axial_DIN0207_L3.6mm_D2.2mm_P10.16mm_Horizontal" V 9230 2125 50  0001 C CNN
+F 3 "~" H 9300 2125 50  0001 C CNN
+	1    9300 2125
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R204
+U 1 1 603C5E33
+P 9825 1900
+F 0 "R204" V 9750 1900 50  0000 C CNN
+F 1 "75" V 9925 1900 50  0000 C CNN
+F 2 "Atari:R_Axial_DIN0207_L3.6mm_D2.2mm_P10.16mm_Horizontal" V 9755 1900 50  0001 C CNN
+F 3 "~" H 9825 1900 50  0001 C CNN
+	1    9825 1900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9000 1625 8750 1625
+Wire Wire Line
+	8400 1500 8400 1625
+Connection ~ 8400 1625
+Wire Wire Line
+	8400 1625 8400 1825
+Wire Wire Line
+	8750 1975 8750 1625
+Connection ~ 8750 1625
+Wire Wire Line
+	8750 1625 8400 1625
+Wire Wire Line
+	9300 975  9300 700 
+Wire Wire Line
+	9300 700  8750 700 
+Connection ~ 8750 700 
+Wire Wire Line
+	9300 1275 9300 1425
+Wire Wire Line
+	9300 1825 9300 1900
+$Comp
+L power:GND #PWR0171
+U 1 1 603E5F3D
+P 8750 2425
+F 0 "#PWR0171" H 8750 2175 50  0001 C CNN
+F 1 "GND" H 8750 2275 50  0000 C CNN
+F 2 "" H 8750 2425 50  0001 C CNN
+F 3 "" H 8750 2425 50  0001 C CNN
+	1    8750 2425
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0172
+U 1 1 603E61FE
+P 9300 2425
+F 0 "#PWR0172" H 9300 2175 50  0001 C CNN
+F 1 "GND" H 9300 2275 50  0000 C CNN
+F 2 "" H 9300 2425 50  0001 C CNN
+F 3 "" H 9300 2425 50  0001 C CNN
+	1    9300 2425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 2275 8750 2425
+Wire Wire Line
+	9300 2275 9300 2425
+Wire Wire Line
+	9675 1900 9600 1900
+Connection ~ 9300 1900
+Wire Wire Line
+	9300 1900 9300 1975
+$Comp
+L Device:Ferrite_Bead FB9
+U 1 1 603FD226
+P 10275 1900
+F 0 "FB9" V 10100 1925 50  0000 C CNN
+F 1 "Ferrite_Bead" V 10475 1900 50  0000 C CNN
+F 2 "Atari:L_Axial_L7.0mm_D3.3mm_P12.50mm_Horizontal_Fastron_MICC" V 10205 1900 50  0001 C CNN
+F 3 "~" H 10275 1900 50  0001 C CNN
+	1    10275 1900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9975 1900 10125 1900
+Text GLabel 10425 1900 2    50   Input ~ 0
+MONO
+$Comp
+L Device:R R203
+U 1 1 6040D53E
+P 7075 3075
+F 0 "R203" V 7075 3075 50  0000 C CNN
+F 1 "3k3" V 6959 3075 50  0000 C CNN
+F 2 "Atari:R_Axial_DIN0207_L3.6mm_D2.2mm_P10.16mm_Horizontal" V 7005 3075 50  0001 C CNN
+F 3 "~" H 7075 3075 50  0001 C CNN
+	1    7075 3075
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R201
+U 1 1 6040D97F
+P 7250 3375
+F 0 "R201" V 7250 3375 50  0000 C CNN
+F 1 "6k8" V 7134 3375 50  0000 C CNN
+F 2 "Atari:R_Axial_DIN0207_L3.6mm_D2.2mm_P10.16mm_Horizontal" V 7180 3375 50  0001 C CNN
+F 3 "~" H 7250 3375 50  0001 C CNN
+	1    7250 3375
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:L L6
+U 1 1 6040DCBA
+P 6875 3375
+F 0 "L6" V 6800 3375 50  0000 C CNN
+F 1 "100uH" V 6950 3375 50  0000 C CNN
+F 2 "Atari:L_Axial_L7.0mm_D3.3mm_P12.50mm_Horizontal_Fastron_MICC" H 6875 3375 50  0001 C CNN
+F 3 "~" H 6875 3375 50  0001 C CNN
+	1    6875 3375
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:L L32
+U 1 1 6040EDC4
+P 7575 3075
+F 0 "L32" V 7500 3075 50  0000 C CNN
+F 1 "100uH" V 7525 3300 50  0000 C CNN
+F 2 "Atari:L_Axial_L7.0mm_D3.3mm_P12.50mm_Horizontal_Fastron_MICC" H 7575 3075 50  0001 C CNN
+F 3 "~" H 7575 3075 50  0001 C CNN
+	1    7575 3075
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7225 3075 7425 3075
+Wire Wire Line
+	4325 2775 5425 2775
+Wire Wire Line
+	6925 3075 6725 3075
+Text GLabel 10425 3075 2    50   Input ~ 0
+COLOR
+Wire Wire Line
+	7725 3075 10425 3075
+$Comp
+L Transistor_BJT:2N3904 Q2
+U 1 1 604437C9
+P 7925 3375
+F 0 "Q2" H 8115 3421 50  0000 L CNN
+F 1 "2N3904" H 8115 3330 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92L_Wide" H 8125 3300 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 7925 3375 50  0001 L CNN
+	1    7925 3375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6475 2775 6475 3075
+Wire Wire Line
+	7400 3375 7725 3375
+$Comp
+L power:+5C #PWR0173
+U 1 1 6046B342
+P 8150 3175
+F 0 "#PWR0173" H 8150 3025 50  0001 C CNN
+F 1 "+5C" V 8165 3303 50  0000 L CNN
+F 2 "" H 8150 3175 50  0001 C CNN
+F 3 "" H 8150 3175 50  0001 C CNN
+	1    8150 3175
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8025 3175 8150 3175
+$Comp
+L Device:R R202
+U 1 1 60473DCE
+P 8025 3950
+F 0 "R202" V 8025 3950 50  0000 C CNN
+F 1 "75" V 7909 3950 50  0000 C CNN
+F 2 "Atari:R_Axial_DIN0207_L3.6mm_D2.2mm_P10.16mm_Horizontal" V 7955 3950 50  0001 C CNN
+F 3 "~" H 8025 3950 50  0001 C CNN
+	1    8025 3950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8025 3575 8025 3625
+Wire Wire Line
+	8025 3625 8300 3625
+$Comp
+L Device:Ferrite_Bead FB31
+U 1 1 60484FCC
+P 8925 3625
+F 0 "FB31" V 8750 3650 50  0000 C CNN
+F 1 "Ferrite_Bead" V 8850 3950 50  0000 C CNN
+F 2 "Atari:L_Axial_L7.0mm_D3.3mm_P12.50mm_Horizontal_Fastron_MICC" V 8855 3625 50  0001 C CNN
+F 3 "~" H 8925 3625 50  0001 C CNN
+	1    8925 3625
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8600 3625 8775 3625
+Text GLabel 10425 3625 2    50   Input ~ 0
+CHROMA
+Wire Wire Line
+	9075 3625 10425 3625
+$Comp
+L power:GND #PWR0174
+U 1 1 60496822
+P 8025 4200
+F 0 "#PWR0174" H 8025 3950 50  0001 C CNN
+F 1 "GND" H 8025 4050 50  0000 C CNN
+F 2 "" H 8025 4200 50  0001 C CNN
+F 3 "" H 8025 4200 50  0001 C CNN
+	1    8025 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R134
+U 1 1 6049F810
+P 4725 2975
+F 0 "R134" V 4725 2975 50  0000 C CNN
+F 1 "470" V 4675 3150 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4655 2975 50  0001 C CNN
+F 3 "~" H 4725 2975 50  0001 C CNN
+	1    4725 2975
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R135
+U 1 1 6049FFC8
+P 4725 3075
+F 0 "R135" V 4725 3075 50  0000 C CNN
+F 1 "470" V 4675 3250 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4655 3075 50  0001 C CNN
+F 3 "~" H 4725 3075 50  0001 C CNN
+	1    4725 3075
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R136
+U 1 1 604A0177
+P 4725 3175
+F 0 "R136" V 4725 3175 50  0000 C CNN
+F 1 "470" V 4675 3350 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4655 3175 50  0001 C CNN
+F 3 "~" H 4725 3175 50  0001 C CNN
+	1    4725 3175
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4325 2975 4575 2975
+Wire Wire Line
+	4325 3075 4575 3075
+Wire Wire Line
+	4325 3175 4575 3175
+Text GLabel 5175 2975 2    50   Input ~ 0
+START
+Text GLabel 5175 3075 2    50   Input ~ 0
+SELECT
+Text GLabel 5175 3175 2    50   Input ~ 0
+OPTION
+Wire Wire Line
+	4875 2975 5175 2975
+Wire Wire Line
+	4875 3075 5175 3075
+Wire Wire Line
+	4875 3175 5175 3175
+$Comp
+L Device:R R132
+U 1 1 604D8064
+P 4875 3325
+F 0 "R132" V 4875 3325 50  0000 C CNN
+F 1 "220" V 4825 3500 50  0000 C CNN
+F 2 "Atari:R_Axial_DIN0207_L3.6mm_D2.2mm_P10.16mm_Horizontal" V 4805 3325 50  0001 C CNN
+F 3 "~" H 4875 3325 50  0001 C CNN
+	1    4875 3325
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R133
+U 1 1 604D840E
+P 4875 3425
+F 0 "R133" V 4875 3425 50  0000 C CNN
+F 1 "220" V 4825 3600 50  0000 C CNN
+F 2 "Atari:R_Axial_DIN0207_L3.6mm_D2.2mm_P10.16mm_Horizontal" V 4805 3425 50  0001 C CNN
+F 3 "~" H 4875 3425 50  0001 C CNN
+	1    4875 3425
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:L L30
+U 1 1 604EB0F1
+P 5675 3325
+F 0 "L30" V 5625 3325 50  0000 C CNN
+F 1 "100uH" V 5625 3575 50  0000 C CNN
+F 2 "Atari:L_Axial_L7.0mm_D3.3mm_P12.50mm_Horizontal_Fastron_MICC" H 5675 3325 50  0001 C CNN
+F 3 "~" H 5675 3325 50  0001 C CNN
+	1    5675 3325
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:L L23
+U 1 1 604EB976
+P 5675 3425
+F 0 "L23" V 5750 3425 50  0000 C CNN
+F 1 "100uH" V 5750 3675 50  0000 C CNN
+F 2 "Atari:L_Axial_L7.0mm_D3.3mm_P12.50mm_Horizontal_Fastron_MICC" H 5675 3425 50  0001 C CNN
+F 3 "~" H 5675 3425 50  0001 C CNN
+	1    5675 3425
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5025 3325 5150 3325
+Wire Wire Line
+	5025 3425 5450 3425
+Text GLabel 6150 3325 2    50   Input ~ 0
+TRIG0
+Text GLabel 6150 3425 2    50   Input ~ 0
+TRIG1
+Wire Wire Line
+	5825 3325 6150 3325
+Wire Wire Line
+	5825 3425 6150 3425
+$Comp
+L Device:C C97
+U 1 1 6052800D
+P 5150 3625
+F 0 "C97" H 5250 3550 50  0000 C CNN
+F 1 "1nF" H 5225 3725 50  0000 C CNN
+F 2 "Atari:C_Axial_L5.1mm_D2.5mm_P12.50mm_Horizontal" H 5188 3475 50  0001 C CNN
+F 3 "~" H 5150 3625 50  0001 C CNN
+	1    5150 3625
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C96
+U 1 1 60528A3B
+P 5450 3625
+F 0 "C96" H 5550 3550 50  0000 C CNN
+F 1 "1nF" H 5525 3725 50  0000 C CNN
+F 2 "Atari:C_Axial_L5.1mm_D2.5mm_P12.50mm_Horizontal" H 5488 3475 50  0001 C CNN
+F 3 "~" H 5450 3625 50  0001 C CNN
+	1    5450 3625
+	-1   0    0    1   
+$EndComp
+Connection ~ 5150 3325
+Wire Wire Line
+	5150 3325 5525 3325
+Connection ~ 5450 3425
+Wire Wire Line
+	5450 3425 5525 3425
+Wire Wire Line
+	5150 3775 5450 3775
+$Comp
+L power:GND #PWR0175
+U 1 1 60547AA9
+P 6125 3775
+F 0 "#PWR0175" H 6125 3525 50  0001 C CNN
+F 1 "GND" H 6275 3800 50  0000 C CNN
+F 2 "" H 6125 3775 50  0001 C CNN
+F 3 "" H 6125 3775 50  0001 C CNN
+	1    6125 3775
+	1    0    0    -1  
+$EndComp
+Connection ~ 5450 3775
+$Comp
+L 74xx:74LS08 U18
+U 4 1 60553DB3
+P 6800 4125
+F 0 "U18" H 6775 4150 50  0000 C CNN
+F 1 "74LS08" H 7050 4275 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 6800 4125 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 6800 4125 50  0001 C CNN
+	4    6800 4125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 3325 4700 3900
+Wire Wire Line
+	4700 3900 5825 3900
+Wire Wire Line
+	5825 3900 5825 4025
+Connection ~ 4700 3325
+Wire Wire Line
+	4700 3325 4725 3325
+Wire Wire Line
+	5825 4025 6500 4025
+Wire Wire Line
+	4325 3325 4700 3325
+Wire Wire Line
+	5725 3975 5725 4225
+Wire Wire Line
+	5725 4225 6500 4225
+Wire Wire Line
+	4325 3425 4600 3425
+Wire Wire Line
+	4600 3975 4600 3425
+Wire Wire Line
+	4600 3975 5725 3975
+Connection ~ 4600 3425
+Wire Wire Line
+	4600 3425 4725 3425
+Text GLabel 7100 4125 2    50   Input ~ 0
+LP
+Wire Wire Line
+	5150 3475 5150 3325
+Wire Wire Line
+	5450 3475 5450 3425
+Wire Wire Line
+	5450 3775 6125 3775
+Wire Wire Line
+	4325 4025 4325 4100
+Wire Wire Line
+	4325 4100 5425 4100
+Wire Wire Line
+	5425 4100 5425 5200
+Connection ~ 5425 5200
+Wire Wire Line
+	5425 1325 5425 2775
+Connection ~ 5425 2775
+Wire Wire Line
+	5425 2775 6475 2775
+Wire Wire Line
+	8025 3625 8025 3800
+Connection ~ 8025 3625
+Wire Wire Line
+	8025 4100 8025 4200
+Wire Wire Line
+	7025 3375 7100 3375
+Wire Wire Line
+	6725 3375 6725 3075
+Connection ~ 6725 3075
+Wire Wire Line
+	6725 3075 6475 3075
+Wire Wire Line
+	8300 5250 8650 5250
+Wire Wire Line
+	8650 6225 8650 5250
+Wire Wire Line
+	6900 6225 8650 6225
+Connection ~ 8650 5250
+Wire Wire Line
+	8650 5250 8925 5250
+Wire Wire Line
+	7275 4700 7275 4825
+Wire Wire Line
+	6800 5250 7275 5250
+Wire Wire Line
+	7275 5125 7275 5250
+Connection ~ 7275 5250
+Wire Wire Line
+	7275 5250 7550 5250
+Wire Wire Line
+	7275 5375 7275 5250
+Wire Wire Line
+	7275 5900 7275 5675
+Wire Wire Line
+	7850 5250 8000 5250
+$Comp
+L Device:C C58
+U 1 1 606AA567
+P 1675 3625
+F 0 "C58" H 1790 3671 50  0000 L CNN
+F 1 "100nF" H 1790 3580 50  0000 L CNN
+F 2 "Atari:C_Axial_L5.1mm_D2.5mm_P12.50mm_Horizontal" H 1713 3475 50  0001 C CNN
+F 3 "~" H 1675 3625 50  0001 C CNN
+	1    1675 3625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 3275 1675 3275
+Wire Wire Line
+	1675 3275 1675 3475
+Wire Wire Line
+	1050 4075 1675 4075
+Wire Wire Line
+	1675 4075 1675 3775
+$Comp
+L power:+5VA #PWR0176
+U 1 1 606C4336
+P 1050 3200
+F 0 "#PWR0176" H 1050 3050 50  0001 C CNN
+F 1 "+5VA" H 1150 3250 50  0000 C CNN
+F 2 "" H 1050 3200 50  0001 C CNN
+F 3 "" H 1050 3200 50  0001 C CNN
+	1    1050 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0177
+U 1 1 606C487C
+P 1050 2750
+F 0 "#PWR0177" H 1050 2500 50  0001 C CNN
+F 1 "GND" H 900 2725 50  0000 C CNN
+F 2 "" H 1050 2750 50  0001 C CNN
+F 3 "" H 1050 2750 50  0001 C CNN
+	1    1050 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 3200 1050 3275
+Connection ~ 1050 3275
+Wire Wire Line
+	1050 4200 1050 4075
+Connection ~ 1050 4075
+$Comp
+L power:GND #PWR0178
+U 1 1 606DF7ED
+P 3350 1375
+F 0 "#PWR0178" H 3350 1125 50  0001 C CNN
+F 1 "GND" H 3200 1350 50  0000 C CNN
+F 2 "" H 3350 1375 50  0001 C CNN
+F 3 "" H 3350 1375 50  0001 C CNN
+	1    3350 1375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 1175 3350 1175
+Wire Wire Line
+	3350 1175 3350 1375
+Wire Wire Line
+	1050 2600 1050 2750
+Wire Wire Line
+	7425 700  7425 525 
+Wire Wire Line
+	7425 525  1050 525 
+Wire Wire Line
+	1050 525  1050 1600
+$Comp
+L Connector:DIN-5_180degree J2
+U 1 1 6027E470
+P 4525 7150
+F 0 "J2" H 4525 7150 50  0000 C CNN
+F 1 "Video" H 4525 6875 50  0000 C CNN
+F 2 "Atari:DIN_5_pin" H 4525 7150 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 4525 7150 50  0001 C CNN
+	1    4525 7150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0182
+U 1 1 6029DB7D
+P 4525 7525
+F 0 "#PWR0182" H 4525 7275 50  0001 C CNN
+F 1 "GND" H 4530 7352 50  0000 C CNN
+F 2 "" H 4525 7525 50  0001 C CNN
+F 3 "" H 4525 7525 50  0001 C CNN
+	1    4525 7525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4525 7450 4525 7525
+Text GLabel 4225 7250 0    50   Input ~ 0
+CHROMA
+Text GLabel 4225 7150 0    50   Input ~ 0
+AUDIO
+Text GLabel 4825 7250 2    50   Input ~ 0
+COMPOSITE
+Text GLabel 4825 7150 2    50   Input ~ 0
+MONO
+$Comp
+L Device:C C204
+U 1 1 60308154
+P 7625 3950
+F 0 "C204" H 7725 3875 50  0000 C CNN
+F 1 "100nF" H 7700 4050 50  0000 C CNN
+F 2 "Atari:C_Axial_L5.1mm_D2.5mm_P12.50mm_Horizontal" H 7663 3800 50  0001 C CNN
+F 3 "~" H 7625 3950 50  0001 C CNN
+	1    7625 3950
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0248
+U 1 1 60308DC4
+P 7625 4200
+F 0 "#PWR0248" H 7625 3950 50  0001 C CNN
+F 1 "GND" H 7625 4050 50  0000 C CNN
+F 2 "" H 7625 4200 50  0001 C CNN
+F 3 "" H 7625 4200 50  0001 C CNN
+	1    7625 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7625 4100 7625 4200
+Wire Wire Line
+	7625 3800 7625 3175
+Wire Wire Line
+	7625 3175 8025 3175
+Connection ~ 8025 3175
+Wire Wire Line
+	3325 6725 3575 6725
+Wire Wire Line
+	3750 5925 3575 5925
+Wire Wire Line
+	3575 5925 3575 6725
+Connection ~ 3575 6725
+Wire Wire Line
+	3575 6725 4050 6725
+Wire Wire Line
+	3750 6225 3325 6225
+Connection ~ 3325 6225
+Wire Wire Line
+	3325 6225 3325 6250
+$Comp
+L power:GND #PWR0249
+U 1 1 6034B9B1
+P 1050 4200
+F 0 "#PWR0249" H 1050 3950 50  0001 C CNN
+F 1 "GND" H 900 4175 50  0000 C CNN
+F 2 "" H 1050 4200 50  0001 C CNN
+F 3 "" H 1050 4200 50  0001 C CNN
+	1    1050 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5VA #PWR0166
+U 1 1 6035DAC7
+P 7275 4700
+F 0 "#PWR0166" H 7275 4550 50  0001 C CNN
+F 1 "+5VA" H 7290 4873 50  0000 C CNN
+F 2 "" H 7275 4700 50  0001 C CNN
+F 3 "" H 7275 4700 50  0001 C CNN
+	1    7275 4700
+	1    0    0    -1  
+$EndComp
+Text GLabel 10425 2300 2    50   Input ~ 0
+MONO_MOD
+Wire Wire Line
+	10425 2300 9600 2300
+Wire Wire Line
+	9600 2300 9600 1900
+Connection ~ 9600 1900
+Wire Wire Line
+	9600 1900 9300 1900
+$Comp
+L power:+5VA #PWR0163
+U 1 1 6036AA54
+P 10050 4350
+F 0 "#PWR0163" H 10050 4200 50  0001 C CNN
+F 1 "+5VA" H 10065 4523 50  0000 C CNN
+F 2 "" H 10050 4350 50  0001 C CNN
+F 3 "" H 10050 4350 50  0001 C CNN
+	1    10050 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J102
+U 1 1 6037C604
+P 800 6575
+F 0 "J102" H 950 6475 50  0000 C CNN
+F 1 "pin" H 718 6441 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x01_P2.00mm_Vertical" H 800 6575 50  0001 C CNN
+F 3 "~" H 800 6575 50  0001 C CNN
+	1    800  6575
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1000 6575 1200 6575
+Wire Wire Line
+	1200 6575 1200 6200
+$Comp
+L Connector_Generic:Conn_01x01 J103
+U 1 1 603DC950
+P 2375 6400
+F 0 "J103" H 2525 6300 50  0000 C CNN
+F 1 "pin" H 2293 6266 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x01_P2.00mm_Vertical" H 2375 6400 50  0001 C CNN
+F 3 "~" H 2375 6400 50  0001 C CNN
+	1    2375 6400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2375 6200 2375 6000
+$Comp
+L Connector_Generic:Conn_01x01 J104
+U 1 1 603FEA4A
+P 5125 6250
+F 0 "J104" H 5275 6150 50  0000 C CNN
+F 1 "pin" H 5043 6116 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x01_P2.00mm_Vertical" H 5125 6250 50  0001 C CNN
+F 3 "~" H 5125 6250 50  0001 C CNN
+	1    5125 6250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5325 6250 5425 6250
+Connection ~ 5425 6250
+$Comp
+L Connector_Generic:Conn_01x01 J105
+U 1 1 6041A994
+P 6150 7550
+F 0 "J105" H 6300 7450 50  0000 C CNN
+F 1 "pin" H 6068 7416 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x01_P2.00mm_Vertical" H 6150 7550 50  0001 C CNN
+F 3 "~" H 6150 7550 50  0001 C CNN
+	1    6150 7550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6150 7350 6150 7125
+Connection ~ 6150 7125
+Text GLabel 2650 7200 0    50   Input ~ 0
+MONO
+Text GLabel 2650 7100 0    50   Input ~ 0
+COMPOSITE
+Text GLabel 2650 7300 0    50   Input ~ 0
+CHROMA
+Text GLabel 2650 7400 0    50   Input ~ 0
+AUDIO
+$Comp
+L Connector_Generic:Conn_01x04 J202
+U 1 1 6046696D
+P 2850 7200
+F 0 "J202" H 2930 7192 50  0000 L CNN
+F 1 "Diag" H 2930 7101 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 2850 7200 50  0001 C CNN
+F 3 "~" H 2850 7200 50  0001 C CNN
+	1    2850 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0253
+U 1 1 60456DB7
+P 3350 7500
+F 0 "#PWR0253" H 3350 7250 50  0001 C CNN
+F 1 "GND" H 3355 7327 50  0000 C CNN
+F 2 "" H 3350 7500 50  0001 C CNN
+F 3 "" H 3350 7500 50  0001 C CNN
+	1    3350 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J210
+U 1 1 6046AFBB
+P 3550 7300
+F 0 "J210" H 3630 7342 50  0000 L CNN
+F 1 "Diag" H 3630 7251 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 3550 7300 50  0001 C CNN
+F 3 "~" H 3550 7300 50  0001 C CNN
+	1    3550 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 7300 3350 7500
+$Comp
+L Diode:1N4002 D102
+U 1 1 642CC7B6
+P 8450 3625
+F 0 "D102" H 8450 3750 50  0000 C CNN
+F 1 "1N4002" H 8450 3525 50  0000 C CNN
+F 2 "Atari:R_Axial_DIN0207_L3.6mm_D2.2mm_P10.16mm_Horizontal" H 8450 3450 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 8450 3625 50  0001 C CNN
+	1    8450 3625
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC

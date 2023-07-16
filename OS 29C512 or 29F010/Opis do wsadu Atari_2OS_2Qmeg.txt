@@ -1,0 +1,6 @@
+rozmieszczenie pamięci:
+
+0x0000 - 0x3FFF		A16=0	A15=0	A14=0 Atari 130XE OS
+0x4000 - 0x7FFF		A16=0	A15=0	A14=1 Atari 130XE OS
+0x8000 - 0xBFFF		A16=0	A15=1	A14=0 Qmeg 4.3
+0xC000 - 0xFFFF		A16=0	A15=1	A14=1 Qmeg 4.4	
